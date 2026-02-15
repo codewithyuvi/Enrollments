@@ -352,7 +352,10 @@ const handleMeeting = async (e: React.MouseEvent<HTMLButtonElement>) => {
           >
             SCHEDULE A MEETING
           </h1>
-          <div className="w-full h-full nes-container justify-center is-rounded is-dark text-2xl md:text-base text-left md:text-center overflow-auto max-h-[65vh] md:max-h-[70vh] p-6 md:p-10 max-w-[360px] sm:max-w-[520px] md:max-w-none mx-auto">
+          <div
+            className="w-full h-full nes-container justify-center is-rounded is-dark text-2xl px-2 md:text-base text-left md:text-center overflow-auto max-h-[65vh] md:max-h-[70vh] p-6 md:p-10 max-w-[360px] sm:max-w-[520px] md:max-w-none mx-auto"
+            style={{ paddingLeft: "0.5rem", paddingRight: "0.5rem" }}
+          >
             <div className="flex flex-col md:flex-row w-full gap-6 min-w-0">
               <div className="w-full md:w-1/3 min-w-0">
                 <Calendar selectDate={handleDate} />
